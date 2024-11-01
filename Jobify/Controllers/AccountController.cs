@@ -8,5 +8,32 @@ namespace Jobify.Controllers
         {
             return View();
         }
+
+        [HttpGet]
+        public IActionResult loginAccount()
+        {
+            return View();
+        }
+
+
+        [HttpGet]
+        public IActionResult registerAccountUser()
+        {
+            return View();
+        }
+
+         [HttpGet]
+        public IActionResult registerAccountEmployee()
+        {
+            return View();
+        }
+
+
+         [HttpGet]
+        public IActionResult forgotAccount()
+        {
+            return View();
+        }
+
     }
 }

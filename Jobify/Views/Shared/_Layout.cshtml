@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="~/Jobify.styles.css" asp-append-version="true" />
 </head>
 <body>
-    <header>
+    @* <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Jobify</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img src="../img/Logo.png" width="131" height="39" ></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -29,7 +29,61 @@
                 </div>
             </div>
         </nav>
-    </header>
+    </header> *@
+
+    <header> 
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <div class="container-fluid d-flex align-items-center"> <!-- Thêm align-items-center ở container -->
+            <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                <img src="../img/Logo.png" width="131" height="39">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between align-items-center"> <!-- Thêm align-items-center để căn giữa -->
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="demosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Demos</a>
+                        <ul class="dropdown-menu" aria-labelledby="demosDropdown">
+                            <li><a class="dropdown-item" href="#">Demo 1</a></li>
+                            <li><a class="dropdown-item" href="#">Demo 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="elementorDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Elementor</a>
+                        <ul class="dropdown-menu" aria-labelledby="elementorDropdown">
+                            <li><a class="dropdown-item" href="#">Elementor 1</a></li>
+                            <li><a class="dropdown-item" href="#">Elementor 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+                        <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
+                            <li><a class="dropdown-item" href="#">Page 1</a></li>
+                            <li><a class="dropdown-item" href="#">Page 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Blog</a>
+                    </li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Đăng ký</a>
+                        <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
+                            <li><a class="dropdown-item" href="/Account/registerAccountUser">Ứng viên</a></li>
+                            <li><a class="dropdown-item" href="/Account/registerAccountEmployee">Nhà tuyển dụng</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="loginAccount">Đăng nhập</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
@@ -38,7 +92,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2024 - Jobify - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2024  &mdash; All Rights Reserved
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

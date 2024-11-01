@@ -20,3 +20,57 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.login-btn {
+  border-radius: 20px;
+  padding: 5px 15px;
+  color: #007bff; /* Màu xanh của đường viền */
+  border-color: #007bff;
+  font-weight: bold;
+}
+
+.login-btn:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.navbar-nav {
+  margin-right: 160px; /* Tăng số này để tạo khoảng cách lớn hơn nếu cần */
+}
+
+.navbar {
+  min-height: 80px; /* Điều chỉnh chiều cao của navbar nếu cần */
+}
+
+.navbar-brand img {
+  max-height: 50px; /* Điều chỉnh chiều cao logo */
+  height: auto; /* Đảm bảo không bị méo ảnh */
+}
+
+.container-fluid.d-flex.align-items-center {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.navbar-nav .nav-item {
+  margin-right: 20px; /* Tăng khoảng cách giữa các mục */
+}
+
+.navbar-nav .nav-item:last-child {
+  margin-right: 0; /* Loại bỏ khoảng cách ở mục cuối cùng để cân đối */
+}
+
+
+.woocommerce-form {
+  width: 50%; /* Chiều rộng form bằng 50% màn hình */
+  margin: 80px auto; /* Căn giữa form */
+}
+
+.woocommerce-Input {
+  width: 50%; /* Chiều rộng input bằng 50% của form */
+}
+
+.lost_password a {
+  color: black;
+  text-decoration: none;
+}

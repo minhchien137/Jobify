@@ -1,0 +1,29 @@
+﻿
+<header class="page-header">
+		<h2 class="page-title" style="text-align: center; font-size: 28px;">Đăng nhập</h2>
+</header>
+
+<form class="woocommerce-form woocommerce-form-login login" method="post">
+    <div class="form-group mb-3">
+        <label for="username"> Địa chỉ email hoặc Số điện thoại  &nbsp;<span class="required">*</span></label>
+        <input type="text" class="form-control" name="username" id="username" autocomplete="username" value=""   
+ />
+    </div>
+    <div class="form-group mb-3">
+        <label for="password">Mật khẩu&nbsp;<span class="required">*</span></label>
+        <input class="form-control" type="password" name="password" id="password" autocomplete="current-password" />
+    </div>
+
+    <div class="form-group mb-3">
+        <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="rememberme" name="rememberme" value="forever">
+            <label class="custom-control-label" for="rememberme">Ghi nhớ</label>
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary mb-3" style="border-radius: 10px; border: 2px solid;">Đăng nhập</button>
+    <p class="lost_password">
+        <a href="/Account/forgotAccount">Quên mật khẩu?</a>
+    </p>
+
+</form>
